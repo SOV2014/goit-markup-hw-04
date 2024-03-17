@@ -1,3 +1,7 @@
+:root {
+  --icon-color: #f4f4fd;
+}
+
 /* Стилі для обнулення відступів у елементів */
 h1,
 h2,
@@ -205,7 +209,7 @@ ol {
   border: none;
   border-radius: 4px;
   margin: 0 auto;
-  background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .box-button:hover,
@@ -314,6 +318,7 @@ ol {
   letter-spacing: 0.02em;
   text-align: center;
   color: #434455;
+  margin-bottom: 8px;
 }
 
 .team-item-list {
@@ -325,6 +330,7 @@ ol {
 .team-item-link {
   width: 40px;
   height: 40px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-link {
@@ -335,7 +341,11 @@ ol {
   display: flex;
   align-items: center;
   justify-content: center;
+}
 
+.team-link:hover,
+.team-link:focus {
+  background-color: #404bbf;
 }
 
 .team-item-link-image {
@@ -430,7 +440,6 @@ ol {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #f4f4fd;
-  --
 }
 
 .footer-text {
@@ -465,6 +474,19 @@ ol {
 .footer-item-link {
   width: 40px;
   height: 40px;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-item-link-image {
+
+  fill: var(--icon-color);
+}
+
+.footer-team-link {
   width: 100%;
   height: 100%;
   background-color: #4d5ae5;
@@ -474,16 +496,10 @@ ol {
   justify-content: center;
 }
 
-/* .footer-item-link-image {
-  width: 100%;
-  height: 100%;
-  background-color: #4d5ae5;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  fill: #f4f4fd;
-} */
+.footer-team-link:hover,
+.footer-team-link:focus {
+  background-color: #31d0aa;
+}
 
 /*  */
 
