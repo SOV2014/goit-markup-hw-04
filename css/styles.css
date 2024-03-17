@@ -522,6 +522,8 @@ ol {
   justify-content: center;
 }
 
+
+
 .footer-item-link-image {
 
   fill: var(--icon-color);
@@ -535,6 +537,10 @@ ol {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.footer-team-link:first-child {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-team-link:hover,
