@@ -1,5 +1,6 @@
 :root {
   --icon-color: #f4f4fd;
+  --kolor-text: #f4f4fd;
 }
 
 /* Стилі для обнулення відступів у елементів */
@@ -330,7 +331,7 @@ ol {
 .team-item-link {
   width: 40px;
   height: 40px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .team-link {
@@ -346,6 +347,10 @@ ol {
 .team-link:hover,
 .team-link:focus {
   background-color: #404bbf;
+}
+
+.team-link:first-child {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-item-link-image {
@@ -378,6 +383,46 @@ ol {
 
 .portfolio-item {
   width: calc((100% - 48px) / 3);
+
+}
+
+.portfolio-item:hover .portfolio-item-image p {
+  transform: translateY(0%);
+}
+
+
+
+.portfolio-list>li:first-child {
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-item:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
+
+}
+
+.portfolio-item-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-down-text {
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--kolor-text);
+  position: absolute;
+  top: 0;
+  padding: 40px 32px;
+  background-color: #4d5ae5;
+  height: 100%;
+  width: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-wrap {
@@ -417,8 +462,8 @@ ol {
 }
 
 .footer-container {
-  margin-left: 156px;
   margin-right: 120px;
+
 }
 
 .footer-logo {
@@ -451,11 +496,7 @@ ol {
   max-width: 264px;
 }
 
-.footer-social-media {
-  display: flex;
-  align-items: baseline;
-  margin-right: 120px;
-}
+.footer-social-media {}
 
 .footer-social-text {
   font-weight: 500;
@@ -500,21 +541,3 @@ ol {
 .footer-team-link:focus {
   background-color: #31d0aa;
 }
-
-/*  */
-
-/* 
-.footer-team-link {
-  width: 100%;
-  height: 100%;
-  background-color: #4d5ae5;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-}
-
-.footer-item-link-image {
-  fill: #f4f4fd;
-} */
